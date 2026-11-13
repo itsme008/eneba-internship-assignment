@@ -27,7 +27,7 @@ This workspace currently uses an isolated local PostgreSQL cluster in ignored `.
 - Create an **isolated** `eneba_test` PostgreSQL database and run `php artisan test`. `phpunit.xml` sets that database name; host/port/user/password come from the environment. These tests rebuild that database, so never point them at valuable data. `pcntl` enables the real two-process last-key contention test; otherwise that test is skipped explicitly.
 - `npx playwright install chromium`, then `npm run test:e2e` against a locally running, seeded app on the email-disabled test port: `ORDER_EMAIL_DRIVER=disabled php artisan serve --host=127.0.0.1 --port=8001 --no-reload`. Set `E2E_BASE_URL` if needed. Browser tests create sample accounts and consume a small amount of demo stock; use a disposable local database. They are authored as a repeatable regression suite; see the validation report for what has actually run.
 
-The current sign-in-required purchase journey was exercised through the connected browser, including cart transfer, declined payment, purchase and key retrieval after signing in again. Earlier guest-payment experiments are historical evidence, not the current checkout policy. See [release validation evidence](docs/reviews/release-readiness.md).
+The current sign-in-required purchase journey was exercised through the connected browser, including cart transfer, declined payment, purchase and key retrieval after signing in again. Earlier guest-payment experiments are historical evidence, not the current checkout policy. See [release validation evidence](docs/VALIDATION.md).
 
 ## Design and code map
 
@@ -65,9 +65,9 @@ Current scope: sign-in/registration is mandatory before payment, matching the as
 
 See [Brevo setup](docs/BREVO_SETUP.md). Set `ORDER_EMAIL_DRIVER=brevo`, `BREVO_API_KEY`, `MAIL_FROM_ADDRESS` and `MAIL_FROM_NAME` as server secrets. Configuration absence is shown honestly; provider failure never undoes a purchase. Outbox retries send the same keys and never repurchase. Guest links require the purchasing browser session unless the order is attached to an account; emails contain the keys directly. No password-reset flow is restored.
 
-Run browser QA with email disabled on port 8001, so fake test recipients cannot reach a real provider. Only use a receiving mailbox you control for a specifically authorized live mail check. Test and real-delivery evidence is recorded in [guest-checkout review](docs/reviews/guest-checkout.md).
+Run browser QA with email disabled on port 8001, so fake test recipients cannot reach a real provider. Only use a receiving mailbox you control for a specifically authorized live mail check. Test and real-delivery evidence is recorded in [guest-checkout review](docs/VALIDATION.md).
 
 
 ## Release progress
 
-The current status is in [TASKS.md](docs/TASKS.md) and the [release checklist](docs/RELEASE_CHECKLIST.md). GitHub Actions is prepared to run PostgreSQL tests, type/build checks, repeatable browser purchase scenarios and a production Docker build; the workflow passed on application commit `4a6c1ca` (21 backend tests / 286 assertions, three browser tests and production Docker build). See the release checklist for deployment status. Metropolis font files are bundled under resources/fonts with their original license in public/fonts; no runtime Google Fonts request is required.
+The current status is in [TASKS.md](docs/TASKS.md) and the [release checklist](docs/VALIDATION.md). GitHub Actions is prepared to run PostgreSQL tests, type/build checks, repeatable browser purchase scenarios and a production Docker build; the workflow passed on application commit `4a6c1ca` (21 backend tests / 286 assertions, three browser tests and production Docker build). See the release checklist for deployment status. Metropolis font files are bundled under resources/fonts with their original license in public/fonts; no runtime Google Fonts request is required.

@@ -1,6 +1,6 @@
 # Implementation and release plan
 
-Updated: 13 November 2026. Current scope is PRD R06: guest browsing/cart preparation, mandatory registration/sign-in before payment, authenticated order history/library, and purchase-key emails. Earlier task estimates and decision history are preserved in [history](history/2026-11-13-before-release-consolidation/TASKS.md).
+Updated: 13 November 2026. Current scope is PRD R06: guest browsing/cart preparation, mandatory registration/sign-in before payment, authenticated order history/library, and purchase-key emails. Earlier task estimates and decision history are preserved in history (preserved in Git history and the private documentation backup).
 
 ## Current status
 
@@ -32,7 +32,7 @@ Updated: 13 November 2026. Current scope is PRD R06: guest browsing/cart prepara
 2. Refresh all conversation exports after the final saved response and preserve a second backup outside this workstation.
 3. Finalize the submission draft and obtain approval before sending it to Eneba.
 
-Release evidence: [hosted verification](reviews/hosted-release.md), [release checklist](RELEASE_CHECKLIST.md).
+Release evidence: [hosted verification](VALIDATION.md), [release checklist](VALIDATION.md).
 
 ## Deadline and checkpoint
 
@@ -42,4 +42,4 @@ Assignment received 9 November 2026 at 14:30; provisional deadline 16 November a
 
 No real payments, activatable keys, actual wallets/cashback/loyalty, functioning favorites/support, password recovery, seller/admin dashboards or localization. Retain signed quotes, precise fixed FX, immutable receipts and encrypted keys. Preserve historical guest orders while preventing new anonymous payments. Never reset stock or seed destructively on startup.
 
-See [authenticated-checkout evidence](reviews/authenticated-checkout-restored.md), [account/storefront evidence](reviews/account-storefront-update.md), and [release checklist](RELEASE_CHECKLIST.md).
+See [authenticated-checkout evidence](VALIDATION.md), [account/storefront evidence](VALIDATION.md), and [release checklist](VALIDATION.md).

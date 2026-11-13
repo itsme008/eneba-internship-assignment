@@ -201,7 +201,7 @@ This favors one deployable application and one database over independent service
 
 Confirmed architecture decisions: PHP + Laravel, PostgreSQL search, one modular application with separate homepage content services sharing PostgreSQL, and one Render service for React assets/API with Neon persistence. R03 defers forgotten-password recovery and Brevo. R02 explicitly retains signed checkout quotes, versioned FX, backend manifest composition, cart revision/merge receipts, replay protection and encrypted simulated-key storage for the first implementation attempt. No simplification is applied by this update.
 
-Defaults adopted for the initial implementation are recorded in [implementation-start.md](reviews/implementation-start.md). DATABASE.md follows this retained architecture without initial reset-token tables. Follow the [two-day checkpoint](TASKS.md#two-day-implementation-checkpoint); it requires measured buyer-journey evidence, not a percentage of completed files. Implementation clock started 2026-11-12 19:09:32 UTC; checkpoint due 2026-11-14 19:09:32 UTC. A later checkpoint recommendation is not automatic authorization to reduce scope, migrate data destructively or bypass core integrity checks.
+Defaults adopted for the initial implementation are recorded in [implementation-start.md](VALIDATION.md). DATABASE.md follows this retained architecture without initial reset-token tables. Follow the [two-day checkpoint](TASKS.md#two-day-implementation-checkpoint); it requires measured buyer-journey evidence, not a percentage of completed files. Implementation clock started 2026-11-12 19:09:32 UTC; checkpoint due 2026-11-14 19:09:32 UTC. A later checkpoint recommendation is not automatic authorization to reduce scope, migrate data destructively or bypass core integrity checks.
 
 ## 14. Expensive-to-reverse decisions and risk containment
 
@@ -226,7 +226,7 @@ R03 also lowers reversal risk: leave Brevo keys/provider settings, reset routes/
 R01 consolidates the current PRD and archives previous planning documents. R02 retains the sophisticated design until a two-implementation-day evidence checkpoint. R03 removes forgotten-password/Brevo work from the initial release. This document update is authorized; application code, migrations, account setup and deployment are not.
 
 
-Implementation evidence: [validation report](reviews/implementation-validation.md). Laravel authenticated encryption provides the opaque quote envelope and key encryption. Writers lock user, cart, attempt and sorted offers in that order; terminal attempt replay precedes quote expiry/revision validation. Ordinary password changes use all-session revocation. Homepage renderers resolve separate content service classes backed by shared content tables. No advanced mechanism was removed.
+Implementation evidence: [validation report](VALIDATION.md). Laravel authenticated encryption provides the opaque quote envelope and key encryption. Writers lock user, cart, attempt and sorted offers in that order; terminal attempt replay precedes quote expiry/revision validation. Ordinary password changes use all-session revocation. Homepage renderers resolve separate content service classes backed by shared content tables. No advanced mechanism was removed.
 
 
 ## Historical R04 (new guest payment superseded by R06) implementation amendment — guest purchase and email

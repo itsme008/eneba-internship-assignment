@@ -4,10 +4,10 @@
       "thread_id": "01a1cf6d-e835-7bc1-9bc7-f766b3400db3",
       "markdown": "01a1cf6d-e835-7bc1-9bc7-f766b3400db3.md",
       "manifest": "01a1cf6d-e835-7bc1-9bc7-f766b3400db3.manifest.json",
-      "source_cutoff": "2026-11-13T03:52:28.972Z",
-      "user_messages": 121,
-      "assistant_messages": 245,
-      "markdown_sha256": "56acbfd1f142b78509b10fcc61c46a7d3fe45561ae8df449d6191e2f710147d5"
+      "source_cutoff": "2026-11-13T03:58:30.433Z",
+      "user_messages": 125,
+      "assistant_messages": 250,
+      "markdown_sha256": "a2fcb176b2d24d62f324d425d928f67e4d66486fdcf2f4fd684b82cc84d99128"
     },
     {
       "thread_id": "01a1cf6d-eb66-73d1-b191-88efd750807b",
@@ -16,7 +16,7 @@
       "source_cutoff": "2026-11-12T19:10:49.237Z",
       "user_messages": 11,
       "assistant_messages": 8,
-      "markdown_sha256": "f5e4b491921452630836a335b20859702cb7d4434c0e2ad4211910dacbf856f6"
+      "markdown_sha256": "ebd0c6c9dfb47e8fa47b95649489a54ac411dcd81b42650f98123f5c7314a741"
     },
     {
       "thread_id": "01a1d131-b78b-7ca2-b0db-13073dea7b5d",
@@ -25,7 +25,7 @@
       "source_cutoff": "2026-11-13T00:38:02.620Z",
       "user_messages": 54,
       "assistant_messages": 46,
-      "markdown_sha256": "bb69d729970c34da06404a59f4597e92a82c3d609f753207fcf17c3e6ce91601"
+      "markdown_sha256": "3e20563f698f4b07e5b36e25f0b5ca28662c81eaf312d39feeacce6c5f122d86"
     },
     {
       "thread_id": "01a1d259-a8a0-7e30-bef8-a6fd65c64fe8",
@@ -34,7 +34,7 @@
       "source_cutoff": "2026-11-13T02:32:18.160Z",
       "user_messages": 66,
       "assistant_messages": 50,
-      "markdown_sha256": "adaf52a9b1349c1d66a1e307bb62533bf826e333f6cf7b45470b11740bd09d09"
+      "markdown_sha256": "e7d4683cf6b74b8e6d826fb160f581182be021e6a0ff5b08dc9fdc71e1eb690d"
     },
     {
       "thread_id": "01a1d2bf-a7f6-7d02-8600-40c5d4818f80",
@@ -43,7 +43,7 @@
       "source_cutoff": "2026-11-13T02:46:45.128Z",
       "user_messages": 24,
       "assistant_messages": 19,
-      "markdown_sha256": "05429688c9d6172cc8b0453c881c4eb1a0038e6b37ae41657cc51ba55cc859fe"
+      "markdown_sha256": "c4305f09fc74fd39efbb9af0586d775f09bf5830a2b7592881eefb77d7c60486"
     }
   ],
   "scope": "Project sessions identified locally; final-session/attachment inventory still requires author review."

@@ -20,7 +20,7 @@ Source labels:
 
 The assignment is source material, not permission to implement. The author required planning-only work until explicit implementation approval, received on 2026-11-12. Ask consequential scope questions in groups of 3–4; derive routine UI proposals from inspected references.
 
-Historical discovery notes, earlier alternatives, the original decision log and superseded review findings are preserved in [history/2026-11-12-before-consolidation](history/2026-11-12-before-consolidation/PRD.md). The original author draft review remains [historical context](PRD_DRAFT_REVIEW.md), not current scope. Full conversation transcripts remain a separate mandatory artifact; history summaries do not replace them.
+Historical discovery notes, earlier alternatives, the original decision log and superseded review findings are preserved in history/2026-11-12-before-consolidation (preserved in Git history and the private documentation backup). The original author draft review remains historical context (preserved in Git history and the private documentation backup), not current scope. Full conversation transcripts remain a separate mandatory artifact; history summaries do not replace them.
 
 ## 2. Latest approved revisions
 
@@ -195,7 +195,7 @@ The [two-day checkpoint in TASKS.md](TASKS.md#two-day-implementation-checkpoint)
 
 ## 12. Change and approval record
 
-- 2026-11-12: Original product decisions and PRD approved; technology/deployment decisions subsequently confirmed. See the [preserved decision history](history/2026-11-12-before-consolidation/PRD.md).
+- 2026-11-12: Original product decisions and PRD approved; technology/deployment decisions subsequently confirmed. See the preserved decision history (preserved in Git history and the private documentation backup).
 - 2026-11-12: R01–R03 explicitly approved: consolidated PRD; retained architecture with a two-implementation-day review; deferred forgotten-password/Brevo scope. Updated all active planning documents consistently. No application implementation authorized.
 
 - 2026-11-12, subsequent authorization: author said “lets start implementing”; local buyer journey implemented and validation evidence recorded.
@@ -203,7 +203,7 @@ The [two-day checkpoint in TASKS.md](TASKS.md#two-day-implementation-checkpoint)
 
 ### R04 — Historical guest purchase and transactional email (guest payment superseded by R06) (13 November 2026)
 
-Explicitly authorized by “lets implement” after discussion of the guest-email → simulated payment → onscreen/email keys → optional account flow. Supersedes sign-in-at-checkout and no-key-email decisions only; R03 still excludes password recovery. Mail sender/API credentials and real inbox delivery must be verified before this feature is release-ready. [Brevo setup](BREVO_SETUP.md); [change and validation evidence](reviews/guest-checkout.md).
+Explicitly authorized by “lets implement” after discussion of the guest-email → simulated payment → onscreen/email keys → optional account flow. Supersedes sign-in-at-checkout and no-key-email decisions only; R03 still excludes password recovery. Mail sender/API credentials and real inbox delivery must be verified before this feature is release-ready. [Brevo setup](BREVO_SETUP.md); [change and validation evidence](VALIDATION.md).
 
 
 ### R05 — Account dashboard and storefront refinement (13 November 2026)
