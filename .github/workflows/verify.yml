@@ -1,0 +1,81 @@
+name: Verify marketplace
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: eneba
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      APP_ENV: local
+      APP_DEBUG: "false"
+      APP_URL: http://127.0.0.1:8001
+      DB_CONNECTION: pgsql
+      DB_HOST: 127.0.0.1
+      DB_PORT: 5432
+      DB_DATABASE: eneba
+      DB_USERNAME: postgres
+      DB_PASSWORD: postgres
+      ORDER_EMAIL_DRIVER: disabled
+      BREVO_API_KEY: ""
+      SESSION_SECURE_COOKIE: "false"
+      E2E_BASE_URL: http://127.0.0.1:8001
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.5"
+          extensions: pdo_pgsql, bcmath, intl, mbstring, pcntl
+          coverage: none
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - name: Install and configure
+        run: |
+          composer install --prefer-dist --no-interaction
+          npm ci
+          cp .env.example .env
+          php artisan key:generate
+          PGPASSWORD=postgres psql -h 127.0.0.1 -U postgres -c 'CREATE DATABASE eneba_test;'
+      - name: Validate source and backend
+        run: |
+          composer validate --strict --no-check-publish
+          vendor/bin/pint --test
+          npm run typecheck
+          APP_ENV=testing DB_DATABASE=eneba_test php artisan test
+          npm run build
+      - name: Browser purchase regression
+        run: |
+          php artisan migrate --seed --force
+          npx playwright install --with-deps chromium
+          php artisan serve --host=127.0.0.1 --port=8001 --no-reload > /tmp/eneba-http.log 2>&1 &
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent http://127.0.0.1:8001/api/v1/health/ready > /dev/null; then break; fi
+            sleep 1
+          done
+          npm run test:e2e
+      - name: Validate production image
+        run: docker build -t eneba-marketplace:verify .
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: browser-failure-traces
+          path: test-results/
+          retention-days: 3

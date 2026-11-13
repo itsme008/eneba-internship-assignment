@@ -1,0 +1,50 @@
+{
+  "threads": [
+    {
+      "thread_id": "01a1cf6d-e835-7bc1-9bc7-f766b3400db3",
+      "markdown": "01a1cf6d-e835-7bc1-9bc7-f766b3400db3.md",
+      "manifest": "01a1cf6d-e835-7bc1-9bc7-f766b3400db3.manifest.json",
+      "source_cutoff": "2026-11-13T02:38:33.626Z",
+      "user_messages": 99,
+      "assistant_messages": 200,
+      "markdown_sha256": "ff284948d9caaa4f27f3a516c2d581006fd64ed38822e069988a48130c4036dc"
+    },
+    {
+      "thread_id": "01a1cf6d-eb66-73d1-b191-88efd750807b",
+      "markdown": "01a1cf6d-eb66-73d1-b191-88efd750807b.md",
+      "manifest": "01a1cf6d-eb66-73d1-b191-88efd750807b.manifest.json",
+      "source_cutoff": "2026-11-12T19:10:49.237Z",
+      "user_messages": 11,
+      "assistant_messages": 8,
+      "markdown_sha256": "f570a093f0d0fabed9edcaf8b8100458264ad82f86dd85282f4380c09402f8c1"
+    },
+    {
+      "thread_id": "01a1d131-b78b-7ca2-b0db-13073dea7b5d",
+      "markdown": "01a1d131-b78b-7ca2-b0db-13073dea7b5d.md",
+      "manifest": "01a1d131-b78b-7ca2-b0db-13073dea7b5d.manifest.json",
+      "source_cutoff": "2026-11-13T00:38:02.620Z",
+      "user_messages": 54,
+      "assistant_messages": 46,
+      "markdown_sha256": "e1da7bd07e78d26672e80825735d52046af5d4fb64d8ea7bd9b4710379cc1245"
+    },
+    {
+      "thread_id": "01a1d259-a8a0-7e30-bef8-a6fd65c64fe8",
+      "markdown": "01a1d259-a8a0-7e30-bef8-a6fd65c64fe8.md",
+      "manifest": "01a1d259-a8a0-7e30-bef8-a6fd65c64fe8.manifest.json",
+      "source_cutoff": "2026-11-13T02:32:18.160Z",
+      "user_messages": 66,
+      "assistant_messages": 50,
+      "markdown_sha256": "bae4ab6c1f6ea866b8d2a7f0ef8dc87c84d67e31a82dbc50526a8a4efaa2f4ef"
+    },
+    {
+      "thread_id": "01a1d2bf-a7f6-7d02-8600-40c5d4818f80",
+      "markdown": "01a1d2bf-a7f6-7d02-8600-40c5d4818f80.md",
+      "manifest": "01a1d2bf-a7f6-7d02-8600-40c5d4818f80.manifest.json",
+      "source_cutoff": "2026-11-13T02:34:39.252Z",
+      "user_messages": 6,
+      "assistant_messages": 3,
+      "markdown_sha256": "efaa7058a87e59ae1aa7f3f49e1572308150fecdd93e60b2b5c0bf8949c183fd"
+    }
+  ],
+  "scope": "Project sessions identified locally; final-session/attachment inventory still requires author review."
+}

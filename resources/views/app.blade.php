@@ -1,0 +1,2 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#4518a7"><meta name="description" content="Discover games, compare seller offers and explore a digital marketplace internship demo."><title>Eneba · Your next adventure</title>@viteReactRefresh @vite('resources/js/app.tsx')</head><body><div id="root"></div></body></html>

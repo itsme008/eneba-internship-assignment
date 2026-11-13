@@ -1,0 +1,13 @@
+{
+  "status": "Historical snapshot; superseded by current docs/PRD.md and current planning documents. Not an implementation instruction.",
+  "sha256": {
+    "PRD.md": "d21f20a764cf8429a0c704fb9157928663ce134e661a12c731c31a328fe42a25",
+    "ARCHITECTURE.md": "b5b9db72b430efdbc2b109471b75091ed8943af13d27b7cff2b46f30beab7f91",
+    "API.md": "78e5cec8ff5928d46e237e244a195be381fb9bd90317414f981761d99733b306",
+    "TASKS.md": "8927a5345775c366a4804a37e0744804509f7e4bc38325f698bfab5acdbdb39c",
+    "AI_CONVERSATION_HISTORY.md": "008a660db3968f836c8d522fa73f37c5a30d4ad14918006087f0e82bd6d6b88d",
+    "PRD_COMPLIANCE_REVIEW.md": "9abecce8802c80e6beb16b88a410114c04627f10a7b291ac32996c0e7b39b793",
+    "PRD_DRAFT_REVIEW.md": "1d360afdb86bf22e370fc01600f24d47efcc70b87020929152407eb34e5102f5",
+    "DATABASE.md": "c5593e90712ea0e741de08230d2f477e6c0058b6d09b397d404ab9830ea98a2e"
+  }
+}

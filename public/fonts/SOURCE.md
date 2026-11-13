@@ -1,0 +1,1 @@
+Metropolis by Chris Simpson. Assets from @fontsource/metropolis 5.3.0 (https://fontsource.org/fonts/metropolis). See METROPOLIS-LICENSE.txt. Bundled locally to avoid third-party runtime font requests.

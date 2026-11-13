@@ -1,0 +1,14 @@
+{
+  "thread_id": "01a1d131-b78b-7ca2-b0db-13073dea7b5d",
+  "source_cutoff": "2026-11-13T00:38:02.620Z",
+  "source_snapshot_sha256": "f35946d2ef14ac64983c73d9ba62e75f731fe1f7e9a80887a921568b06ec5487",
+  "markdown_sha256": "e1da7bd07e78d26672e80825735d52046af5d4fb64d8ea7bd9b4710379cc1245",
+  "user_messages": 54,
+  "assistant_messages": 46,
+  "non_text_attachments": {
+    "input_image": 4
+  },
+  "malformed_records": [],
+  "ordered_message_text_verified": true,
+  "coverage": "All canonical recorded user/assistant text through cutoff. Later responses, original attachments and earlier sessions require separate preservation."
+}

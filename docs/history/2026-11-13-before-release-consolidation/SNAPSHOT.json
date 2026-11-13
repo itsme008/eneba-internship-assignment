@@ -1,0 +1,13 @@
+{
+  "purpose": "Preserve previous planning/status text before release reconciliation",
+  "files": [
+    {
+      "file": "TASKS.md",
+      "sha256": "be0388970590599081d07e09aa31348a45d34293bda6bac5d7c822778c4515d4"
+    },
+    {
+      "file": "PRD_COMPLIANCE_REVIEW.md",
+      "sha256": "ea33c4a32d1cbab0cfe92e14e59f5573d1a3f3aa460901f0db33463ff56a8313"
+    }
+  ]
+}
