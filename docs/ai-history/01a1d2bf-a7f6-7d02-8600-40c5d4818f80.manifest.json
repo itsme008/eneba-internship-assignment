@@ -1,11 +1,13 @@
 {
   "thread_id": "01a1d2bf-a7f6-7d02-8600-40c5d4818f80",
-  "source_cutoff": "2026-11-13T02:34:39.252Z",
-  "source_snapshot_sha256": "7a665100f387df43ec23d30725637594c3fd6f6054917c0f7bef6e6e8f882b84",
-  "markdown_sha256": "efaa7058a87e59ae1aa7f3f49e1572308150fecdd93e60b2b5c0bf8949c183fd",
-  "user_messages": 6,
-  "assistant_messages": 3,
-  "non_text_attachments": {},
+  "source_cutoff": "2026-11-13T02:46:45.128Z",
+  "source_snapshot_sha256": "4e548240cba6b982c682e417f0e7f437f3acd53a2ec880bae02675b79bf9098d",
+  "markdown_sha256": "05429688c9d6172cc8b0453c881c4eb1a0038e6b37ae41657cc51ba55cc859fe",
+  "user_messages": 24,
+  "assistant_messages": 19,
+  "non_text_attachments": {
+    "input_image": 2
+  },
   "malformed_records": [],
   "ordered_message_text_verified": true,
   "coverage": "All canonical recorded user/assistant text through cutoff. Later responses, original attachments and earlier sessions require separate preservation."

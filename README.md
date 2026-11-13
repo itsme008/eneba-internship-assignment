@@ -27,7 +27,7 @@ This workspace currently uses an isolated local PostgreSQL cluster in ignored `.
 - Create an **isolated** `eneba_test` PostgreSQL database and run `php artisan test`. `phpunit.xml` sets that database name; host/port/user/password come from the environment. These tests rebuild that database, so never point them at valuable data. `pcntl` enables the real two-process last-key contention test; otherwise that test is skipped explicitly.
 - `npx playwright install chromium`, then `npm run test:e2e` against a locally running, seeded app on the email-disabled test port: `ORDER_EMAIL_DRIVER=disabled php artisan serve --host=127.0.0.1 --port=8001 --no-reload`. Set `E2E_BASE_URL` if needed. Browser tests create sample accounts and consume a small amount of demo stock; use a disposable local database. They are authored as a repeatable regression suite; see the validation report for what has actually run.
 
-The browser journey was also exercised through the connected browser: the original registered journey and the new guest-email/payment/keys/optional account journey. See [validation evidence](docs/reviews/implementation-validation.md).
+The current sign-in-required purchase journey was exercised through the connected browser, including cart transfer, declined payment, purchase and key retrieval after signing in again. Earlier guest-payment experiments are historical evidence, not the current checkout policy. See [release validation evidence](docs/reviews/release-readiness.md).
 
 ## Design and code map
 
@@ -42,7 +42,7 @@ Checkout uses an authenticated encrypted, versioned ten-minute quote. User/cart/
 
 ## Render + Neon deployment
 
-The selected host remains Render with Neon PostgreSQL. `Dockerfile`, `docker/apache.conf`, `.dockerignore` and `render.yaml` prepare a single Apache/PHP application that includes compiled React assets. **The Docker image and public deployment have not yet been validated.** Docker is not installed in this workspace.
+The selected host remains Render with Neon PostgreSQL. `Dockerfile`, `docker/apache.conf`, `.dockerignore` and `render.yaml` prepare a single Apache/PHP application that includes compiled React assets. The Docker image builds successfully in GitHub Actions; public runtime validation awaits Render deployment. Docker is not installed in this workspace.
 
 1. Create the Neon database and enable `pg_trgm` via the migration role. Supply a TLS `DB_URL` with `sslmode=require` as a secret, never a committed file.
 2. Set one stable `APP_KEY`, `APP_URL` to the HTTPS hostname, `APP_ENV=production`, `APP_DEBUG=false`, secure session cookies, DB-backed sessions/cache and stderr logging. `render.yaml` lists these settings. Trust only the deployed proxy addresses if URL/security handling requires it; verify secure cookies after deployment.
@@ -56,7 +56,7 @@ GitHub repository publication, host account provisioning and submission are stil
 
 Game cover/screenshot artwork is downloaded from public Steam promotional endpoints into `public/images/games`; it is bundled locally, not fetched by the runtime backend. `scripts/fetch-art.py` reproduces those downloads. Gift-card/subscription illustrations and the Minecraft placeholder are local SVG demo assets. Game art belongs to its respective rights holders; this is an unaffiliated educational demo.
 
-The assignment requires the complete user/assistant conversation. [History preservation instructions](docs/AI_CONVERSATION_HISTORY.md) explain the source and current coverage. Run `python3 scripts/export-history.py --source /absolute/path/to/project-session.jsonl` to refresh the Markdown snapshot and hash/count manifest after each session. Earlier project chats and attachment binaries still need reconciliation. A snapshot generated during a turn cannot include its later final response; do a final refresh after that response has been saved.
+The assignment requires the complete user/assistant conversation. [History preservation instructions](docs/AI_CONVERSATION_HISTORY.md) explain the source and current coverage. Run `python3 scripts/export-history.py --source /absolute/path/to/project-session.jsonl` to refresh the Markdown snapshot and hash/count manifest after each session. All five identified project threads are exported; the author confirmed no other AI chats were used. Inline attachment binaries still need reconciliation. A snapshot generated during a turn cannot include its later final response; do a final refresh after that response has been saved.
 
 
 ## Authenticated checkout and purchase-key email (R06)
@@ -70,4 +70,4 @@ Run browser QA with email disabled on port 8001, so fake test recipients cannot 
 
 ## Release progress
 
-The current status is in [TASKS.md](docs/TASKS.md) and the [release checklist](docs/RELEASE_CHECKLIST.md). GitHub Actions is prepared to run PostgreSQL tests, type/build checks, repeatable browser purchase scenarios and a production Docker build; the workflow has not run remotely yet. Metropolis font files are bundled under resources/fonts with their original license in public/fonts; no runtime Google Fonts request is required.
+The current status is in [TASKS.md](docs/TASKS.md) and the [release checklist](docs/RELEASE_CHECKLIST.md). GitHub Actions is prepared to run PostgreSQL tests, type/build checks, repeatable browser purchase scenarios and a production Docker build; the workflow passed on application commit `4a6c1ca` (21 backend tests / 286 assertions, three browser tests and production Docker build). See the release checklist for deployment status. Metropolis font files are bundled under resources/fonts with their original license in public/fonts; no runtime Google Fonts request is required.

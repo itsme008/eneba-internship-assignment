@@ -4,10 +4,10 @@
       "thread_id": "01a1cf6d-e835-7bc1-9bc7-f766b3400db3",
       "markdown": "01a1cf6d-e835-7bc1-9bc7-f766b3400db3.md",
       "manifest": "01a1cf6d-e835-7bc1-9bc7-f766b3400db3.manifest.json",
-      "source_cutoff": "2026-11-13T03:16:26.791Z",
-      "user_messages": 116,
-      "assistant_messages": 225,
-      "markdown_sha256": "c21b2f513958fcde9f7f9e7850ffdbcdd1ccfc3e08e8b09ea8db2dfa192bf5d0"
+      "source_cutoff": "2026-11-13T03:29:14.255Z",
+      "user_messages": 118,
+      "assistant_messages": 237,
+      "markdown_sha256": "cb6d2e22b470b9590c58a813cc70303ed4c0596d4055c37f507e85a251f4ff5b"
     },
     {
       "thread_id": "01a1cf6d-eb66-73d1-b191-88efd750807b",
@@ -16,7 +16,7 @@
       "source_cutoff": "2026-11-12T19:10:49.237Z",
       "user_messages": 11,
       "assistant_messages": 8,
-      "markdown_sha256": "f570a093f0d0fabed9edcaf8b8100458264ad82f86dd85282f4380c09402f8c1"
+      "markdown_sha256": "f5e4b491921452630836a335b20859702cb7d4434c0e2ad4211910dacbf856f6"
     },
     {
       "thread_id": "01a1d131-b78b-7ca2-b0db-13073dea7b5d",
@@ -25,7 +25,7 @@
       "source_cutoff": "2026-11-13T00:38:02.620Z",
       "user_messages": 54,
       "assistant_messages": 46,
-      "markdown_sha256": "e1da7bd07e78d26672e80825735d52046af5d4fb64d8ea7bd9b4710379cc1245"
+      "markdown_sha256": "bb69d729970c34da06404a59f4597e92a82c3d609f753207fcf17c3e6ce91601"
     },
     {
       "thread_id": "01a1d259-a8a0-7e30-bef8-a6fd65c64fe8",
@@ -34,16 +34,16 @@
       "source_cutoff": "2026-11-13T02:32:18.160Z",
       "user_messages": 66,
       "assistant_messages": 50,
-      "markdown_sha256": "bae4ab6c1f6ea866b8d2a7f0ef8dc87c84d67e31a82dbc50526a8a4efaa2f4ef"
+      "markdown_sha256": "adaf52a9b1349c1d66a1e307bb62533bf826e333f6cf7b45470b11740bd09d09"
     },
     {
       "thread_id": "01a1d2bf-a7f6-7d02-8600-40c5d4818f80",
       "markdown": "01a1d2bf-a7f6-7d02-8600-40c5d4818f80.md",
       "manifest": "01a1d2bf-a7f6-7d02-8600-40c5d4818f80.manifest.json",
-      "source_cutoff": "2026-11-13T02:34:39.252Z",
-      "user_messages": 6,
-      "assistant_messages": 3,
-      "markdown_sha256": "efaa7058a87e59ae1aa7f3f49e1572308150fecdd93e60b2b5c0bf8949c183fd"
+      "source_cutoff": "2026-11-13T02:46:45.128Z",
+      "user_messages": 24,
+      "assistant_messages": 19,
+      "markdown_sha256": "05429688c9d6172cc8b0453c881c4eb1a0038e6b37ae41657cc51ba55cc859fe"
     }
   ],
   "scope": "Project sessions identified locally; final-session/attachment inventory still requires author review."
