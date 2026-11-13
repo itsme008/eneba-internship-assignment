@@ -2,7 +2,7 @@
   "thread_id": "01a1d2bf-a7f6-7d02-8600-40c5d4818f80",
   "source_cutoff": "2026-11-13T02:46:45.128Z",
   "source_snapshot_sha256": "4e548240cba6b982c682e417f0e7f437f3acd53a2ec880bae02675b79bf9098d",
-  "markdown_sha256": "c4305f09fc74fd39efbb9af0586d775f09bf5830a2b7592881eefb77d7c60486",
+  "markdown_sha256": "15e18b5064fb3d8e7c220d6275abd58bb83f036fc6d35370c2816613d7653d56",
   "user_messages": 24,
   "assistant_messages": 19,
   "non_text_attachments": {

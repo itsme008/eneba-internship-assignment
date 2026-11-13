@@ -49,7 +49,6 @@ for i,(timestamp,role,channel,body) in enumerate(messages,1):
     offset+=len(block)+(2 if i<len(messages) else 1)
 counts=Counter(m[1] for m in messages)
 manifest={'thread_id':thread,'source_cutoff':cutoff,'source_snapshot_sha256':hashlib.sha256(raw).hexdigest(),'markdown_sha256':hashlib.sha256(dest.read_bytes()).hexdigest(),'user_messages':counts['user'],'assistant_messages':counts['assistant'],'non_text_attachments':dict(attachments),'malformed_records':malformed,'ordered_message_text_verified':True,'coverage':'All canonical recorded user/assistant text through cutoff. Later responses, original attachments and earlier sessions require separate preservation.'}
-(args.output_dir/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
 (args.output_dir/f'{thread}.manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
 index=[]
 for entry in sorted(args.output_dir.glob('*.manifest.json')):
