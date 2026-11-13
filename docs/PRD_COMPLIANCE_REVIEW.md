@@ -23,3 +23,7 @@ Updated: 13 November 2026. Rechecked against both pages of the original assignme
 The earlier guest-checkout deviation is resolved for new purchases. Historical guest order records and their restricted recovery/claim path remain preserved. Purchase emails remain enabled; forgotten-password recovery remains deferred. Visual previews do not imply functioning wallet, loyalty, favorites or support systems.
 
 Previous planning/status review is preserved in [history](history/2026-11-13-before-release-consolidation/PRD_COMPLIANCE_REVIEW.md). Working software and passing local tests are distinct from hosted/submission readiness. See [release checklist](RELEASE_CHECKLIST.md).
+
+## Hosted evidence update
+
+The app is now public at https://eneba-marketplace-demo.onrender.com and the approved private source is https://github.com/itsme008/eneba-internship-assignment. CI passes all 21 backend tests / 286 assertions, three browser tests and the Docker build. Hosted HTTPS/cookies/CSRF/search/cart/sign-in/purchase/email/library/restart checks passed; the author confirmed matching email and onscreen keys. Neon is initialized. All five AI threads and 23 inline image binaries are inventoried. These results supersede pending release evidence in the earlier review table. Evaluator repository access, final author review/export/second backup and approved submission reply remain. See [hosted verification](reviews/hosted-release.md).

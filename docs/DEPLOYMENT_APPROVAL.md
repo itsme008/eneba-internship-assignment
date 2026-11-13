@@ -1,6 +1,6 @@
 # Render deployment proposal
 
-Status: prepared for author approval; no service created yet.
+Status: author approved deployment and named secret transfer on 13 November 2026. Service `srv-dbr8epdckfvc73dhlc80` created on the free plan; deployment is live and verified. Public URL: https://eneba-marketplace-demo.onrender.com. Hosted checks and restart persistence passed; see `reviews/hosted-release.md`.
 
 - Source: private `itsme008/eneba-internship-assignment`, branch `main`.
 - Service: `eneba-marketplace-demo`, Docker, Frankfurt, free compute ($0/month, 0.1 CPU, 512 MB RAM).

@@ -5,7 +5,7 @@ Hi Eneba team,
 Here is my internship assignment submission:
 
 - Source repository: https://github.com/itsme008/eneba-internship-assignment (private; reviewer access must be arranged)
-- Live application: **[pending Render deployment]**
+- Live application: https://eneba-marketplace-demo.onrender.com
 - Setup and testing: README.md in the repository
 - Full AI-assisted conversation: docs/ai-history/ (Markdown export and verification manifest; final completeness check pending)
 

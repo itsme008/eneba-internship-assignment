@@ -1,0 +1,190 @@
+{
+  "coverage": "All input_image parts in the five canonical user-message thread sources; binaries backed up privately, not published.",
+  "occurrences": [
+    {
+      "thread_id": "01a1cf6d-e835-7bc1-9bc7-f766b3400db3",
+      "source_line": 63,
+      "content_index": 1,
+      "sha256": "d913237f6d35496f7410a26bfb33f8cb9dfcd0e55d5cbe0f235c612631145f04",
+      "bytes": 923666,
+      "private_backup": ".runtime/submission/attachments/chat-images/d913237f6d35496f7410a26bfb33f8cb9dfcd0e55d5cbe0f235c612631145f04.png"
+    },
+    {
+      "thread_id": "01a1cf6d-e835-7bc1-9bc7-f766b3400db3",
+      "source_line": 63,
+      "content_index": 2,
+      "sha256": "cf5e4c301a3476fe0d6670bf6a25c27e0f0f91a9fb3e2e06c0bae8e7620541c4",
+      "bytes": 681718,
+      "private_backup": ".runtime/submission/attachments/chat-images/cf5e4c301a3476fe0d6670bf6a25c27e0f0f91a9fb3e2e06c0bae8e7620541c4.png"
+    },
+    {
+      "thread_id": "01a1cf6d-e835-7bc1-9bc7-f766b3400db3",
+      "source_line": 63,
+      "content_index": 3,
+      "sha256": "44c2cb7778dc51442a6df6bc76da188b9b98c12eb198222769797ab1125a44dc",
+      "bytes": 1230225,
+      "private_backup": ".runtime/submission/attachments/chat-images/44c2cb7778dc51442a6df6bc76da188b9b98c12eb198222769797ab1125a44dc.png"
+    },
+    {
+      "thread_id": "01a1cf6d-e835-7bc1-9bc7-f766b3400db3",
+      "source_line": 63,
+      "content_index": 4,
+      "sha256": "6d3dc4b761e45931fc086a48a88c0038418a8e475c76be03426961be0574b729",
+      "bytes": 1247070,
+      "private_backup": ".runtime/submission/attachments/chat-images/6d3dc4b761e45931fc086a48a88c0038418a8e475c76be03426961be0574b729.png"
+    },
+    {
+      "thread_id": "01a1cf6d-e835-7bc1-9bc7-f766b3400db3",
+      "source_line": 63,
+      "content_index": 5,
+      "sha256": "41771a59155383e61299dfdf64d20b6dbe6d359ee2df97317a137e1d868dc5d6",
+      "bytes": 1277663,
+      "private_backup": ".runtime/submission/attachments/chat-images/41771a59155383e61299dfdf64d20b6dbe6d359ee2df97317a137e1d868dc5d6.png"
+    },
+    {
+      "thread_id": "01a1cf6d-e835-7bc1-9bc7-f766b3400db3",
+      "source_line": 499,
+      "content_index": 1,
+      "sha256": "5d9db6eccfeb4aa0c8b482210addf2a9ee497b67556a9b28d70757840933caa0",
+      "bytes": 123365,
+      "private_backup": ".runtime/submission/attachments/chat-images/5d9db6eccfeb4aa0c8b482210addf2a9ee497b67556a9b28d70757840933caa0.png"
+    },
+    {
+      "thread_id": "01a1cf6d-e835-7bc1-9bc7-f766b3400db3",
+      "source_line": 775,
+      "content_index": 1,
+      "sha256": "b0cbebf7c4d64938e77815a5e0c9fc1e75c1789c78a4a60da2f5e02050fcdeb9",
+      "bytes": 795628,
+      "private_backup": ".runtime/submission/attachments/chat-images/b0cbebf7c4d64938e77815a5e0c9fc1e75c1789c78a4a60da2f5e02050fcdeb9.png"
+    },
+    {
+      "thread_id": "01a1cf6d-e835-7bc1-9bc7-f766b3400db3",
+      "source_line": 2154,
+      "content_index": 1,
+      "sha256": "cebed4817fca6b4466b9ae7ee71e720f458aaa2046f11b05e62d6f4b45e7d88d",
+      "bytes": 384335,
+      "private_backup": ".runtime/submission/attachments/chat-images/cebed4817fca6b4466b9ae7ee71e720f458aaa2046f11b05e62d6f4b45e7d88d.png"
+    },
+    {
+      "thread_id": "01a1cf6d-e835-7bc1-9bc7-f766b3400db3",
+      "source_line": 2415,
+      "content_index": 1,
+      "sha256": "5c9754bc948a3981fb30d6e20fa52f17e794558dcf386d92f58036276d5f35b9",
+      "bytes": 631309,
+      "private_backup": ".runtime/submission/attachments/chat-images/5c9754bc948a3981fb30d6e20fa52f17e794558dcf386d92f58036276d5f35b9.png"
+    },
+    {
+      "thread_id": "01a1cf6d-e835-7bc1-9bc7-f766b3400db3",
+      "source_line": 2415,
+      "content_index": 2,
+      "sha256": "072759860df6d3442bc669b51fecd7e982b66cb96289a0c825ab22e0f08e296a",
+      "bytes": 549546,
+      "private_backup": ".runtime/submission/attachments/chat-images/072759860df6d3442bc669b51fecd7e982b66cb96289a0c825ab22e0f08e296a.png"
+    },
+    {
+      "thread_id": "01a1cf6d-e835-7bc1-9bc7-f766b3400db3",
+      "source_line": 2415,
+      "content_index": 3,
+      "sha256": "c0f910b5bec90fe15b4a5f06fb4dfb7ff38d4475651afac64da274d4058cbf2d",
+      "bytes": 569403,
+      "private_backup": ".runtime/submission/attachments/chat-images/c0f910b5bec90fe15b4a5f06fb4dfb7ff38d4475651afac64da274d4058cbf2d.png"
+    },
+    {
+      "thread_id": "01a1cf6d-e835-7bc1-9bc7-f766b3400db3",
+      "source_line": 2415,
+      "content_index": 4,
+      "sha256": "be0c0515470053328037f1e634362731d718d7f418b04b9cf8745e0b077f0cbf",
+      "bytes": 203774,
+      "private_backup": ".runtime/submission/attachments/chat-images/be0c0515470053328037f1e634362731d718d7f418b04b9cf8745e0b077f0cbf.png"
+    },
+    {
+      "thread_id": "01a1cf6d-e835-7bc1-9bc7-f766b3400db3",
+      "source_line": 2647,
+      "content_index": 1,
+      "sha256": "ad56968759d8d23d39d7c262767f892af93897abe682eef2c0cfddb1f34311fc",
+      "bytes": 842690,
+      "private_backup": ".runtime/submission/attachments/chat-images/ad56968759d8d23d39d7c262767f892af93897abe682eef2c0cfddb1f34311fc.png"
+    },
+    {
+      "thread_id": "01a1d131-b78b-7ca2-b0db-13073dea7b5d",
+      "source_line": 293,
+      "content_index": 24,
+      "sha256": "f5abe1295fc2eb52d590b87368dc2343043369e91159e1c42bc0b36491263d5c",
+      "bytes": 41553,
+      "private_backup": ".runtime/submission/attachments/chat-images/f5abe1295fc2eb52d590b87368dc2343043369e91159e1c42bc0b36491263d5c.jpg"
+    },
+    {
+      "thread_id": "01a1d131-b78b-7ca2-b0db-13073dea7b5d",
+      "source_line": 293,
+      "content_index": 29,
+      "sha256": "321d58338c5c52c1f7d45dd65552acf322932206275e45c10b4757df69b2372a",
+      "bytes": 32891,
+      "private_backup": ".runtime/submission/attachments/chat-images/321d58338c5c52c1f7d45dd65552acf322932206275e45c10b4757df69b2372a.jpg"
+    },
+    {
+      "thread_id": "01a1d131-b78b-7ca2-b0db-13073dea7b5d",
+      "source_line": 316,
+      "content_index": 12,
+      "sha256": "257d0196364309b78bd0ff2664c52272ad159b693a7c3884f6f67fc4636ab136",
+      "bytes": 38367,
+      "private_backup": ".runtime/submission/attachments/chat-images/257d0196364309b78bd0ff2664c52272ad159b693a7c3884f6f67fc4636ab136.jpg"
+    },
+    {
+      "thread_id": "01a1d131-b78b-7ca2-b0db-13073dea7b5d",
+      "source_line": 352,
+      "content_index": 11,
+      "sha256": "c2121bc8a327ddbc13dcdfae1b56dd8b0c59376df47ff302ca6b8a1c3db07797",
+      "bytes": 48127,
+      "private_backup": ".runtime/submission/attachments/chat-images/c2121bc8a327ddbc13dcdfae1b56dd8b0c59376df47ff302ca6b8a1c3db07797.jpg"
+    },
+    {
+      "thread_id": "01a1d259-a8a0-7e30-bef8-a6fd65c64fe8",
+      "source_line": 323,
+      "content_index": 18,
+      "sha256": "4e9176f41c0c520028c4d13983212ac3fb545126a2d6599e1a019b15e0fbdf82",
+      "bytes": 96848,
+      "private_backup": ".runtime/submission/attachments/chat-images/4e9176f41c0c520028c4d13983212ac3fb545126a2d6599e1a019b15e0fbdf82.jpg"
+    },
+    {
+      "thread_id": "01a1d259-a8a0-7e30-bef8-a6fd65c64fe8",
+      "source_line": 334,
+      "content_index": 12,
+      "sha256": "8060ff8c099f3ffa5c1284871170c6b94a72b5be0777b44191b4998a0471e02b",
+      "bytes": 51027,
+      "private_backup": ".runtime/submission/attachments/chat-images/8060ff8c099f3ffa5c1284871170c6b94a72b5be0777b44191b4998a0471e02b.jpg"
+    },
+    {
+      "thread_id": "01a1d259-a8a0-7e30-bef8-a6fd65c64fe8",
+      "source_line": 334,
+      "content_index": 13,
+      "sha256": "3cb329cc17322b12c476b0f4240b63d57b1e85806c919795907d56f41e5db17c",
+      "bytes": 90273,
+      "private_backup": ".runtime/submission/attachments/chat-images/3cb329cc17322b12c476b0f4240b63d57b1e85806c919795907d56f41e5db17c.jpg"
+    },
+    {
+      "thread_id": "01a1d259-a8a0-7e30-bef8-a6fd65c64fe8",
+      "source_line": 369,
+      "content_index": 16,
+      "sha256": "8b9aa95e47e3ae29399a1c94cbc1ad952e3f72fec828cc9bc9f0d6468c8327ef",
+      "bytes": 59711,
+      "private_backup": ".runtime/submission/attachments/chat-images/8b9aa95e47e3ae29399a1c94cbc1ad952e3f72fec828cc9bc9f0d6468c8327ef.jpg"
+    },
+    {
+      "thread_id": "01a1d2bf-a7f6-7d02-8600-40c5d4818f80",
+      "source_line": 180,
+      "content_index": 18,
+      "sha256": "4761339ad7972ce42aec2bca642d04baf46d41dfbf78bb0a54f9ab69010179c4",
+      "bytes": 87664,
+      "private_backup": ".runtime/submission/attachments/chat-images/4761339ad7972ce42aec2bca642d04baf46d41dfbf78bb0a54f9ab69010179c4.jpg"
+    },
+    {
+      "thread_id": "01a1d2bf-a7f6-7d02-8600-40c5d4818f80",
+      "source_line": 180,
+      "content_index": 23,
+      "sha256": "eb032ee451689e58741ee01b9ebfe672d238dbcd6464358cde48effe5daa24fe",
+      "bytes": 88636,
+      "private_backup": ".runtime/submission/attachments/chat-images/eb032ee451689e58741ee01b9ebfe672d238dbcd6464358cde48effe5daa24fe.jpg"
+    }
+  ],
+  "unique_binaries": 23
+}

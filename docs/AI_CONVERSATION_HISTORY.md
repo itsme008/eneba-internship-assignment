@@ -56,3 +56,5 @@ Original assignment PDF, draft PRD PDF and supplied movie are now copied to igno
 
 
 Author confirmation (13 November 2026): only the five recovered local Codex threads were used for this assignment; no additional AI-app conversations need recovery. Final per-thread refresh and inline attachment-binary reconciliation remain separate checks.
+
+Inline attachment reconciliation completed: 23 embedded image occurrences across the five canonical sources were decoded, privately backed up under ignored `.runtime/submission/attachments/chat-images`, and verified by SHA-256. See `ai-history/inline-attachments.json`. Image binaries are not published in GitHub; preserve this private bundle with the original PDF/movie backups. Final saved-response export and a second off-machine backup remain required.

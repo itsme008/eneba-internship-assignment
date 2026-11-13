@@ -16,10 +16,10 @@ Current release policy: visitors browse and prepare carts; sign-in/registration 
 - [x] Build the production Docker image in CI. Runtime verification remains part of hosted deployment checks below.
 - [x] Create/publish the intended private repository, with no .env, credentials, runtime database or generated traces.
 - [x] Initialize existing Neon PostgreSQL; verify direct/pooled TLS connections and pg_trgm migrations.
-- [ ] Configure Render from render.yaml using the same production database and a stable APP_KEY.
+- [x] Configure the approved free Render Docker service using the same production database and stable APP_KEY; first build in progress.
 - [x] Apply migrations once and explicitly seed once. Do not reset stock or reseed on every app start.
-- [ ] Verify HTTPS/secure sessions, CSRF, deep links, protected payment, catalogue/search, simulated purchase, matching onscreen/email keys, and account library on the live site.
-- [ ] Restart/redeploy and confirm accounts, orders, encrypted keys and stock remain consistent.
+- [x] Verify HTTPS/secure sessions, CSRF, deep links, protected payment, catalogue/search, simulated purchase, matching onscreen/email keys, and account library on the live site.
+- [x] Restart the service and confirm accounts, session, orders, encrypted keys, stock and single email attempt remain consistent.
 - [ ] Reconcile earlier conversations and original attachments. Refresh Markdown export after the final saved response; maintain a second backup.
 - [ ] Fill in real GitHub/public app links in the submission draft and author approves the final reply to Eneba.
 
@@ -30,3 +30,5 @@ Use Render secrets/settings for APP_KEY, APP_URL, DB_URL, BREVO_API_KEY, MAIL_FR
 Neon migrations and the 54-product seed completed. Pooled application purchase verification passed inside a rolled-back transaction; Neon MCP read-only verification passed. Render sign-in is confirmed. Private repository publication is approved; Render service creation/deployment remains pending approval.
 
 Private repository published: `itsme008/eneba-internship-assignment`. The author approved GitHub workflow authorization; push succeeded. CI run `43358789563` passed on application commit `4a6c1ca`: 21 backend tests / 286 assertions, three browser tests, type/build/format checks and production Docker build.
+
+Hosted release passed: see [hosted verification](reviews/hosted-release.md). The author approved free Render deployment and secret transfer, plus one live demo purchase/email, and confirmed inbox receipt with the matching key. All 23 inline chat image binaries are privately preserved and hash-inventoried in `ai-history/inline-attachments.json`. Final export and off-machine backup remain.

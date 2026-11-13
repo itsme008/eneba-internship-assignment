@@ -6,34 +6,33 @@ Updated: 13 November 2026. Current scope is PRD R06: guest browsing/cart prepara
 
 | Workstream | Status | Evidence / remaining work |
 | --- | --- | --- |
-| Laravel/React/TypeScript/PostgreSQL environment | Complete locally | Locked dependencies; Composer platform checks pass. |
-| Schema, 54 demo products and 6–7 sellers per product | Complete locally | Stable seed/inventory and constraint tests. |
-| Catalogue, filtering, sorting and pagination | Complete locally | PostgreSQL tests and connected-browser checks. |
-| Global partial/fuzzy search and live suggestions | Complete locally | First-character matching, longer-query typo handling, keyboard controls; shared search in storefront and account headers. |
-| Independent backend homepage blocks | Complete locally | Eight manifest sections, including backend-owned navigation and genre tiles; independent disable/content tests. |
-| Product, seller comparison, static gallery, sample reviews, related products | Complete locally | Real backend data and reference-inspired layout. |
-| Registration/login/logout/profile/password change | Complete locally | Session/CSRF/ownership tests; password recovery deferred. |
-| Guest/account carts, merge, Buy now | Complete locally | Guest persistence, revision/merge receipts, existing whole-cart behavior. |
-| Authenticated payment, stock, distinct keys and replay | Complete locally | Server/service auth gates, atomic purchase, decline/rollback/contention checks. |
-| Purchase email | Verified locally | Brevo accepted; user confirmed inbox and matching order/email key. Hosted configuration still required. |
-| Account dashboard, keys library and visual previews | Complete locally | Actual purchase summaries, owner-scoped fuzzy search; unsupported features clearly labeled previews. |
+| Laravel/React/TypeScript/PostgreSQL environment | Implemented and released | Locked dependencies; Composer platform checks pass. |
+| Schema, 54 demo products and 6–7 sellers per product | Implemented and released | Stable seed/inventory and constraint tests. |
+| Catalogue, filtering, sorting and pagination | Implemented and released | PostgreSQL tests and connected-browser checks. |
+| Global partial/fuzzy search and live suggestions | Implemented and released | First-character matching, longer-query typo handling, keyboard controls; shared search in storefront and account headers. |
+| Independent backend homepage blocks | Implemented and released | Eight manifest sections, including backend-owned navigation and genre tiles; independent disable/content tests. |
+| Product, seller comparison, static gallery, sample reviews, related products | Implemented and released | Real backend data and reference-inspired layout. |
+| Registration/login/logout/profile/password change | Implemented and released | Session/CSRF/ownership tests; password recovery deferred. |
+| Guest/account carts, merge, Buy now | Implemented and released | Guest persistence, revision/merge receipts, existing whole-cart behavior. |
+| Authenticated payment, stock, distinct keys and replay | Implemented and released | Server/service auth gates, atomic purchase, decline/rollback/contention checks. |
+| Purchase email | Verified live | Author confirmed live order email and onscreen key match. |
+| Account dashboard, keys library and visual previews | Implemented and released | Actual purchase summaries, owner-scoped fuzzy search; unsupported features clearly labeled previews. |
 | Eneba visual refinement | Local pass complete | Bundled Metropolis, reference palette, spacing, cards, header/banner/rails, product/cart/checkout/account layouts. Final user visual review welcome. |
 | Local backend/build/format checks | Passing | Latest dated validation reports carry exact counts. |
 | Connected-browser regression | Exercised | Authenticated cart → decline → success → logout/login/key retrieval, desktop/mobile and search checks. |
-| Repeatable Playwright runner | Prepared, not executed | Updated scenarios and GitHub workflow; run before submission. |
-| Production Docker image | Prepared, not built | No Docker engine locally; CI builds the image after tests once published. |
-| Render + Neon | Awaiting configuration and release approval | User has Render account and Neon string; secrets go into ignored .env.deploy. No hosted app claimed. |
-| GitHub publication | Pending approval | Connected account works; CLI authentication works with authorized network access. Repository not yet created. |
-| Documentation/history/submission | In progress | Current-thread Markdown export works; earlier-session/attachment inventory and final links still need reconciliation. |
+| Repeatable Playwright runner | Passing in CI | All three tests pass, including authenticated purchase and mobile filtering. |
+| Production Docker image | Built in CI; running live | Free Render Docker service passes readiness and purchase checks. |
+| Render + Neon | Deployed and verified | See hosted-release report for HTTPS, CSRF, purchase/email and restart evidence. |
+| GitHub publication | Published privately | itsme008/eneba-internship-assignment; evaluator access still needs arrangement. |
+| Documentation/history/submission | Final author review pending | Five threads exported; 23 inline image binaries privately preserved and hashed. Final export/second backup/submission approval remain. |
 
 ## Next actions, in order
 
-1. Finish remaining local UI/error/keyboard checks; preserve screenshot/validation evidence and keep backend checks green.
-2. Run CI/Playwright and production image validation after approved repository publication.
-3. Read-only Neon connectivity/schema check after the user saves DB_URL in .env.deploy. Prepare a concrete Render configuration; ask approval before provisioning/publishing or mutating the hosted database.
-4. Apply one controlled migration/seed to the intended empty demo database; configure stable production secrets and deploy free-tier Render service.
-5. Verify HTTPS/secure sessions/CSRF, deep routes, auth gate, purchase/email/library and durable state across restart.
-6. Complete [release checklist](RELEASE_CHECKLIST.md), conversation inventory and [submission draft](SUBMISSION_DRAFT.md). Obtain final approval before sending the registration-email reply.
+1. Arrange evaluator access to the private GitHub repository and complete author visual/code review.
+2. Refresh all conversation exports after the final saved response and preserve a second backup outside this workstation.
+3. Finalize the submission draft and obtain approval before sending it to Eneba.
+
+Release evidence: [hosted verification](reviews/hosted-release.md), [release checklist](RELEASE_CHECKLIST.md).
 
 ## Deadline and checkpoint
 
