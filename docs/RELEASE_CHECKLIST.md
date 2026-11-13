@@ -15,9 +15,9 @@ Current release policy: visitors browse and prepare carts; sign-in/registration 
 - [ ] Run the repeatable Playwright suite. CI workflow is prepared but has not run on GitHub yet.
 - [ ] Build/run the production Docker image; the local workstation has no Docker engine.
 - [ ] Create/publish the intended repository, with no .env, credentials, runtime database or generated traces.
-- [ ] Create Neon PostgreSQL; configure a TLS database URL and verify pg_trgm migrations.
+- [x] Initialize existing Neon PostgreSQL; verify direct/pooled TLS connections and pg_trgm migrations.
 - [ ] Configure Render from render.yaml using the same production database and a stable APP_KEY.
-- [ ] Apply migrations once and explicitly seed once. Do not reset stock or reseed on every app start.
+- [x] Apply migrations once and explicitly seed once. Do not reset stock or reseed on every app start.
 - [ ] Verify HTTPS/secure sessions, CSRF, deep links, protected payment, catalogue/search, simulated purchase, matching onscreen/email keys, and account library on the live site.
 - [ ] Restart/redeploy and confirm accounts, orders, encrypted keys and stock remain consistent.
 - [ ] Reconcile earlier conversations and original attachments. Refresh Markdown export after the final saved response; maintain a second backup.
@@ -27,4 +27,4 @@ Current release policy: visitors browse and prepare carts; sign-in/registration 
 
 Use Render secrets/settings for APP_KEY, APP_URL, DB_URL, BREVO_API_KEY, MAIL_FROM_ADDRESS and MAIL_FROM_NAME. Keep APP_DEBUG=false, SESSION_SECURE_COOKIE=true and ORDER_EMAIL_DRIVER=brevo for the deployed HTTPS app. The verified sender must exactly match MAIL_FROM_ADDRESS. Never put credentials into GitHub, screenshots or the public transcript.
 
-Neon TLS/read-only connectivity is verified: empty public schema and CREATE permission. Render sign-in is confirmed. Repository/service creation and hosted migration/deployment approval are still pending. A connected GitHub account exists, and local CLI authentication is verified with network access. No external repository/service was created during preparation.
+Neon migrations and the 54-product seed completed. Pooled application purchase verification passed inside a rolled-back transaction; Neon MCP read-only verification passed. Render sign-in is confirmed. Private repository publication is approved; Render service creation/deployment remains pending approval.

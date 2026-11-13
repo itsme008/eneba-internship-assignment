@@ -53,3 +53,6 @@ These exports verify recorded text within the identified files, not completeness
 
 
 Original assignment PDF, draft PRD PDF and supplied movie are now copied to ignored .runtime/submission/attachments with hashes in ai-history/attachments.json. Inline screenshot binaries and any other-app conversations still require reconciliation. These private attachment backups are not staged for publication.
+
+
+Author confirmation (13 November 2026): only the five recovered local Codex threads were used for this assignment; no additional AI-app conversations need recovery. Final per-thread refresh and inline attachment-binary reconciliation remain separate checks.
