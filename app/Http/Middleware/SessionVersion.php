@@ -22,6 +22,6 @@ class SessionVersion
             $response->headers->set('Cache-Control', 'no-store');
         }
 
-return $response;
+        return $response;
     }
 }

@@ -32,7 +32,7 @@ class IdentityController extends Controller
                 app(GuestCheckout::class)->claim($r, $data['claim_order_id'], $user->id, $user->email);
             }
 
-return $user;
+            return $user;
         }, 3);
         Auth::login($user);
         $r->session()->regenerate();

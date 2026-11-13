@@ -14,7 +14,7 @@ Current release policy: visitors browse and prepare carts; sign-in/registration 
 - [ ] Review final visual match at desktop/mobile widths; confirm no critical interaction regression.
 - [ ] Run the repeatable Playwright suite. CI workflow is prepared but has not run on GitHub yet.
 - [ ] Build/run the production Docker image; the local workstation has no Docker engine.
-- [ ] Create/publish the intended repository, with no .env, credentials, runtime database or generated traces.
+- [x] Create/publish the intended private repository, with no .env, credentials, runtime database or generated traces.
 - [x] Initialize existing Neon PostgreSQL; verify direct/pooled TLS connections and pg_trgm migrations.
 - [ ] Configure Render from render.yaml using the same production database and a stable APP_KEY.
 - [x] Apply migrations once and explicitly seed once. Do not reset stock or reseed on every app start.
@@ -29,4 +29,4 @@ Use Render secrets/settings for APP_KEY, APP_URL, DB_URL, BREVO_API_KEY, MAIL_FR
 
 Neon migrations and the 54-product seed completed. Pooled application purchase verification passed inside a rolled-back transaction; Neon MCP read-only verification passed. Render sign-in is confirmed. Private repository publication is approved; Render service creation/deployment remains pending approval.
 
-Private repository created: `itsme008/eneba-internship-assignment`. Initial push was rejected because the existing GitHub OAuth login lacks `workflow` scope; browser authorization is pending. No CI run or successful publication is claimed yet.
+Private repository published: `itsme008/eneba-internship-assignment`. The author approved GitHub workflow authorization; push succeeded. CI run `43358172223` is in progress; no passing CI result is claimed yet.

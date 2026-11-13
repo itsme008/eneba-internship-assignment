@@ -66,7 +66,7 @@ class GuestCheckout
     {
         $order = DB::table('orders')->where('id', $id)->first();
         $owned = $order && (($request->user() && $order->user_id === $request->user()->id) || (! $order->user_id && $order->guest_checkout_id && $order->guest_checkout_id === $request->session()->get('guest_checkout_id')));
-        abort_unless($owned,404,'Order not found.');
+        abort_unless($owned, 404, 'Order not found.');
 
         return $order;
     }

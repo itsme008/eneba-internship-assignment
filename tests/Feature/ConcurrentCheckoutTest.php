@@ -64,6 +64,6 @@ class ConcurrentCheckoutTest extends TestCase
         $this->assertSame(0, DB::table('offers')->where('id', $offer->id)->value('stock_quantity'));
         $this->assertSame(1, DB::table('orders')->count());
         $this->assertSame(1, DB::table('order_keys')->count());
-        $this->assertSame(1,DB::table('cart_items')->count());
+        $this->assertSame(1, DB::table('cart_items')->count());
     }
 }

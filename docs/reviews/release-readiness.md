@@ -26,3 +26,7 @@ Final approval remains required for the actual submission reply. The two-day arc
 
 
 Repository note: Render already has access to an existing public `itsme008/eneba` repository with a separate client/server layout. It was inspected read-only and left untouched. A new repository is proposed to avoid replacing that unrelated implementation. Ignore rules were checked: .env/.env.deploy, runtime databases, vendor/node_modules, build outputs and QA traces are not staged. Markdown hard-break whitespace and exact conversation text are preserved intentionally.
+
+## Subsequent release progress
+
+The author approved private GitHub publication and confirmed these five Codex threads are the complete AI-chat inventory. The private repository is now published at https://github.com/itsme008/eneba-internship-assignment. GitHub Actions run 43358172223 is in progress. Neon initialization completed with 54 products, eight homepage blocks and pg_trgm; pooled purchase verification rolled back cleanly. CLI and MCP access are authenticated and verified. These results supersede the earlier preparation status above. Render deployment remains pending approval.
