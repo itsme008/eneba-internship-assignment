@@ -97,6 +97,9 @@ test("guest cart, registration, decline, purchase, sign-in and key retrieval", a
         .getByRole("textbox", { name: "Password", exact: true })
         .fill(password);
     await page.getByRole("button", { name: "Sign in", exact: true }).click();
+    await expect(
+        page.getByRole("button", { name: "Your account", exact: true }),
+    ).toBeVisible();
     await page.goto(orderUrl);
     await expect(page.locator("code")).toHaveText(key);
 });
@@ -107,9 +110,12 @@ test("mobile catalogue remains usable without page overflow", async ({
     await page.setViewportSize({ width: 390, height: 844 });
     await page.goto("/catalog");
     await page.getByRole("button", { name: "Filters", exact: true }).click();
-    await page
-        .getByRole("checkbox", { name: "Gaming gift cards", exact: true })
-        .check();
+    const giftCards = page.getByRole("checkbox", {
+        name: "Gaming gift cards",
+        exact: true,
+    });
+    await giftCards.click();
+    await expect(giftCards).toBeChecked();
     await expect(page.getByText("15 results", { exact: true })).toBeVisible();
     expect(
         await page.evaluate(
