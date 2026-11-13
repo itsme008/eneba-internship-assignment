@@ -28,3 +28,5 @@ Current release policy: visitors browse and prepare carts; sign-in/registration 
 Use Render secrets/settings for APP_KEY, APP_URL, DB_URL, BREVO_API_KEY, MAIL_FROM_ADDRESS and MAIL_FROM_NAME. Keep APP_DEBUG=false, SESSION_SECURE_COOKIE=true and ORDER_EMAIL_DRIVER=brevo for the deployed HTTPS app. The verified sender must exactly match MAIL_FROM_ADDRESS. Never put credentials into GitHub, screenshots or the public transcript.
 
 Neon migrations and the 54-product seed completed. Pooled application purchase verification passed inside a rolled-back transaction; Neon MCP read-only verification passed. Render sign-in is confirmed. Private repository publication is approved; Render service creation/deployment remains pending approval.
+
+Private repository created: `itsme008/eneba-internship-assignment`. Initial push was rejected because the existing GitHub OAuth login lacks `workflow` scope; browser authorization is pending. No CI run or successful publication is claimed yet.
